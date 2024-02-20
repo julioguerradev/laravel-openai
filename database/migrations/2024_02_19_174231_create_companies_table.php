@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('companies', function (Blueprint $table) {
             $table->id();
-            $table->integer('commision_rate');
+            $table->integer('commission_rate');
             $table->string('name');
             $table->timestamps();
         });

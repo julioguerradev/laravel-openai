@@ -30,7 +30,7 @@ return new class extends Migration
                 s.sold_at,
                 s.status,
                 s.total_amount,
-                round(s.total_amount * cp.commision_rate / 100) as commission
+                round(s.total_amount * cp.commission_rate / 100) as commission
             ")->toSql();
 
         // MATERIALIZED - ARMAZENA O RESULTADO DA CONSULTA NO CASH
