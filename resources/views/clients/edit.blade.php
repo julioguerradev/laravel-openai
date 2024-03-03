@@ -9,7 +9,7 @@
             <form method="POST" action="{{ route('clients.update', $client->id) }}">
                 @csrf
                 @method('PUT')
-
+                
                 <!-- Name -->
                 <div>
                     <x-input-label for="name" :value="__('Name')" />
