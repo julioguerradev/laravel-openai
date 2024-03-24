@@ -1,6 +1,6 @@
 <div>
     <div class="overflow-x-auto">
-        <table class="divide-y divide-gray-300 w-full">
+        <table class="w-full divide-y divide-gray-300">
             <thead class="bg-gray-50 dark:bg-gray-800">
                 <tr>
                     @foreach($columns as $column)
@@ -24,17 +24,17 @@
             @foreach($items as $item)
                 <tr class="bg-white dark:bg-gray-700">
                     @foreach($columns as $column)
-                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-white">{{ data_get($item, $column['column']) }}</td>
+                        <td class="px-3 py-4 text-sm text-gray-500 whitespace-nowrap dark:text-white">{{ data_get($item, $column['column']) }}</td>
                     @endforeach
 
                     @if($edit)
-                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-white">
+                        <td class="px-3 py-4 text-sm text-gray-500 whitespace-nowrap dark:text-white">
                             <a href="{{ route($edit, $item->id) }}" class="text-indigo-600 hover:text-indigo-900 dark:text-white dark:hover:text-gray-400">{{ __('Edit') }}</a>
                         </td>
                     @endif
 
                     @if($delete)
-                        <td class="whitespace-nowrap px-3 py-4 text-sm text-gray-500 dark:text-white">
+                        <td class="px-3 py-4 text-sm text-gray-500 whitespace-nowrap dark:text-white">
 
                             {{ __('Delete') }}
 

@@ -61,8 +61,7 @@
     <div class="flex flex-col flex-1 min-h-0 bg-gray-800">
 
         <div class="flex items-center flex-shrink-0 px-4 py-4">
-            {{-- <img class="w-auto h-8" src="{{ Vite::asset("resources/assets/logo.svg") }}" alt="Your Company"> --}}
-            <img class="w-auto h-8" src="" alt="Your Company">
+            <img class="w-auto h-8" src="{{ Vite::asset("resources/assets/logo.svg") }}" alt="Your Company">
         </div>
 
         <div class="flex flex-col flex-1 overflow-y-auto">
